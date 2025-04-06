@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberVault Store - Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: url('backround.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #00bfff;
+      font-family: 'Roboto Mono', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      overflow: hidden;
+      padding-top: 50px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      color: #00bfff;
+    }
+
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      width: 80%;
+      margin-top: 30px;
+    }
+
+    .product-card {
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 2px solid #00bfff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px #00bfff;
+      transition: transform 0.3s ease;
+      min-height: 220px;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #00bfff;
+    }
+
+    .product-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      color: #00bfff;
+      margin-bottom: 15px;
+    }
+
+    .product-description {
+      font-size: 1rem;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .buy-button {
+      background-color: #00bfff;
+      border: none;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-button:hover {
+      background-color: #008cbb;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 1rem;
+      color: #00bfff;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>CyberVault Store - All Products</h1>
+  </div>
+
+  <div class="product-container">
+    <!-- GTA 5 -->
+    <div class="product-card">
+      <div class="product-name">GTA 5</div>
+      <div class="product-price">35DT</div>
+      <div class="product-description">Get your copy of GTA 5 now! Enjoy endless fun and adventures in Los Santos.</div>
+      <button class="buy-button" onclick="window.location.href='https://discord.gg/M3TEYEME'">Buy Now</button>
+    </div>
+
+    <!-- Red Dead Redemption 2 -->
+    <div class="product-card">
+      <div class="product-name">RDR2</div>
+      <div class="product-price">45DT</div>
+      <div class="product-description">Experience the wild west in Red Dead Redemption 2 with stunning graphics and gameplay.</div>
+      <button class="buy-button" onclick="window.location.href='https://discord.gg/M3TEYEME'">Buy Now</button>
+    </div>
+
+    <!-- FiveM -->
+    <div class="product-card">
+      <div class="product-name">FiveM</div>
+      <div class="product-price">27DT</div>
+      <div class="product-description">Enhance your GTA 5 experience with FiveM, a multiplayer modification platform.</div>
+      <button class="buy-button" onclick="window.location.href='https://discord.gg/M3TEYEME'">Buy Now</button>
+    </div>
+
+    <!-- MasterCard -->
+    <div class="product-card">
+      <div class="product-name">MasterCard</div>
+      <div class="product-price">37DT</div>
+      <div class="product-description">Get your MasterCard for secure online transactions and purchases.</div>
+      <button class="buy-button" onclick="window.location.href='https://discord.gg/M3TEYEME'">Buy Now</button>
+    </div>
+
+    <!-- Visa Card -->
+    <div class="product-card">
+      <div class="product-name">Visa Card</div>
+      <div class="product-price">60DT</div>
+      <div class="product-description">Visa cards for easy payments and worldwide purchases.</div>
+      <button class="buy-button" onclick="window.location.href='https://discord.gg/M3TEYEME'">Buy Now</button>
+    </div>
+
+    <!-- Netflix 1 Month -->
+    <div class="product-card">
+      <div class="product-name">Netflix 1 Month</div>
+      <div class="product-price">23DT</div>
+      <div class="product-description">Get access to Netflix for one month with tons of movies and series.</div>
+      <button class="buy-button" onclick="window.location.href='https://discord.gg/M3TEYEME'">Buy Now</button>
+    </div>
+
+    <!-- Instagram Followers -->
+    <div class="product-card">
+      <div class="product-name">Instagram Fake Followers 1k</div>
+      <div class="product-price">10DT</div>
+      <div class="product-description">Boost your profile with 1k fake Instagram followers.</div>
+      <button class="buy-button" onclick="window.location.href='https://discord.gg/M3TEYEME'">Buy Now</button>
+    </div>
+
+    <!-- More Products can be added here similarly -->
+  </div>
+
+  <div class="footer">
+    Made with 💙
+  </div>
+</body>
+</html>
